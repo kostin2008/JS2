@@ -1,12 +1,12 @@
 [
   {
-    "id_product": 123,
-    "product_name": "???????",
+    "id": 123,
+    "product_name": "Ноутбук",
     "price": 45600
   },
   {
     "id": 456,
-    "title": "?????",
+    "title": "Мышка",
     "price": 1000
   }
 ]
