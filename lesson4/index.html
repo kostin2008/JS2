@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form name="mainForm" action="https:\\ya.ru" id="mainForm" class="mainForm" onsubmit="return formValidation()">
+        <fieldset>
+            <legend>Validation form</legend>
+            <p>Имя:</p>
+            <input type="text" name="username" id="username" autocomplete="off" />
+            <p>Телефон:</p>
+            <input type="text" name="userphone" id="userphone" autocomplete="off" />
+            <p>Электронная почта:</p>
+            <input type="text" name="email" id="email" autocomplete="off" />
+            <p>Ваш комментарий:</p>
+            <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
+            <input type="submit" value="Отправить" id="btn" />
+        </fieldset>
+    </form>
+    <p class="fixedText"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
