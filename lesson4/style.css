@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 20px 0 0 20px;
+    float: left;
+    margin-right: 50px;
+}
+
+fieldset {
+    width: 500px;
+}
+
+fieldset * {
+    margin-left: 20px;
+}
+
+fieldset p {
+    margin-bottom: 10px;
+}
+
+fieldset input {
+    margin-bottom: 15px;
+    padding: 0 3px;
+}
+
+fieldset input:focus,
+textarea:focus {
+    outline: none;
+}
+
+fieldset input[type="button"] {
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.wrongData {
+    border-color: red;
+}
+
+.rightData {
+    border-color: greenyellow;
+}
