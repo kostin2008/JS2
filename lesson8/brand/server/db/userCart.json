@@ -1,0 +1,24 @@
+{
+    "amount": 115,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 1006,
+            "product_name": "Red t-shot",
+            "price": 57,
+            "img": "img/goods/06.jpg",
+            "discount": true,
+            "filter": true
+        },
+        {
+            "quantity": 1,
+            "id_product": 1007,
+            "product_name": "Yellow t-shot",
+            "price": 58,
+            "img": "img/goods/07.jpg",
+            "discount": false,
+            "filter": true
+        }
+    ]
+}

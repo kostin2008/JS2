@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Интернет-магазин одежды">	
+	<meta name="robots" content="noindex, nofollow">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div id="app">
+
+	<header class="header">
+		<div class="conteiner header-flex">
+			<div class="header-left">
+				<a class="logo" href="index.html"><img class="logo-img" src="img/logo-top.png" alt="logo">
+					BRAN<span class="logo-d">D</span>
+				</a>
+				
+				<div class="top-form-wrapper">
+					<!-- выпадающее меню -->
+					<div class="browse-btn">Browse &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+						<div class="dropdown">
+							<p class="dropdown__caption">Women</p>
+							<ul class="dropdown__menu">
+								<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Denim</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Leggings/Pants</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Skirts/Shorts</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Accessories </a></li>
+							</ul>
+							<p class="dropdown__caption">Men</p>
+							<ul class="dropdown__menu">
+								<li class="dropdown__list"><a href="catalog.html">Tees/Tank tops</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Shirts/Polos</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Sweaters</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Sweatshirts/Hoodies</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+								<li class="dropdown__list"><a href="catalog.html">Jackets/vests</a></li>
+							</ul>
+						</div>							
+					</div>
+					<!-- выпадающее меню -->
+					<app-search></app-search>
+				</div>
+			</div>
+
+			<div class="header-right">
+				
+				<!-- выпадающая корзина -->
+				<app-mini-cart ref="appMiniCart" :cart-list="cartList"></app-mini-cart>
+				<!-- выпадающая корзина -->
+
+				<!-- регистрация и авторизация -->			
+				<div class="button sign">My Account&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+					<div class="sign_drop">
+						<a href="checkout.html" class="cart__button">Register Now</a>
+						<a href="checkout.html" class="cart__button">Sign in</a>				
+					</div>
+				</div>
+				<!-- регистрация и авторизация -->	
+								
+			</div>
+		</div>
+	</header>
+
+	<!-- основное меню -->
+	<nav class="navigation">
+		<ul class="menu">
+			<li><a href="index.html" class="menu-list">Home</a></li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Man</a></li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Women</a>
+				<div class="mega__menu">
+					<div class="mega__menu-col">
+	
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Denim</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Leggings/Pants</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Skirts/Shorts</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Accessories </a></li>
+						</ul>
+					</div>
+					<div class="mega__menu-col">
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+						</ul>
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+						</ul>
+					</div>
+					<div class="mega__menu-col">
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+						</ul>
+						<img src="img/mega-menu.jpg" alt="картинка для мегаменю" class="mega__menu-img">
+					</div>
+				</div>
+			</li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Kids</a></li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Accoseriese</a></li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Featured</a></li>
+			<li class="menu-list-li"><a href="catalog.html" class="menu-list">Hot Deals </a>
+				<div class="mega__menu mega-menu-last">
+					<div class="mega__menu-col">
+	
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Denim</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Leggings/Pants</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Skirts/Shorts</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Accessories </a></li>
+						</ul>
+					</div>
+					<div class="mega__menu-col">
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Blazers</a></li>
+						</ul>
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+						</ul>
+					</div>
+					<div class="mega__menu-col">
+						<p class="dropdown__caption">Women</p>
+						<ul class="dropdown__menu">
+							<li class="dropdown__list"><a href="catalog.html">Dresses</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Tops</a></li>
+							<li class="dropdown__list"><a href="catalog.html">Sweaters/Knits</a></li>
+						</ul>
+						<img src="img/mega-menu.jpg" alt="картинка для мегаменю" class="mega__menu-img">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- основное меню -->
+
+	<!-- хлебные крошки -->
+	<div class="bread ">
+		<div class="bread__flex conteiner">
+			<div class="bread__left">
+				<p class="bread__left-caption">New Arrivals</p>
+			</div>
+			<div class="bread__right">
+				<a href="index.html" class="bread__right-text">Home</a>
+				<p>&nbsp;/&nbsp;</p>
+				<a href="catalog.html" class="bread__right-text">Men</p></a>
+				<p>&nbsp;/&nbsp;</p>
+				<p class="bread__right-text"><span class="bread__right-bold">New Arrivals </span></p>
+			</div>			
+		</div>
+	</div>
+	<!-- хлебные крошки -->
+
+	<!-- главная часть -->
+	<main class="catalog conteiner">
+
+
+		<!-- боковая колонка -->
+		<aside class="catalog">
+			<div class="catalog__item">
+				<div class="catalog__item-cap">
+					<p class="catalog__item-category">Category</p>
+					<p class="catalog__item-drop"><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+				</div>
+				<div class="catalog__item-list">
+					<ul class="dropdown__menu">
+						<li class="dropdown__list aside-menu"><a href="#">Dresses</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Bags</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Denim</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Hoodies & Sweatshirts</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Jackets & Coats</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Pants</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Polos</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Shirts </a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Shoes</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Sweaters & Knits</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Tanks </a></li>						
+					</ul>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__item-cap">
+					<p class="catalog__item-category">Brand</p>
+					<p class="catalog__item-drop"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+				</div>
+				<div class="catalog__item-list">
+					<ul class="dropdown__menu">
+						<li class="dropdown__list aside-menu"><a href="#">Gucchi</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Armani</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Dolche Gabbana</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Slava Zaiceff</a></li>
+					</ul>
+				</div>				
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__item-cap">
+					<p class="catalog__item-category">Design</p>
+					<p class="catalog__item-drop"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+				</div>
+				<div class="catalog__item-list">
+					<ul class="dropdown__menu">
+						<li class="dropdown__list aside-menu"><a href="#">Minimalism</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Econom</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Business</a></li>
+						<li class="dropdown__list aside-menu"><a href="#">Nuar</a></li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<!-- боковая колонка -->
+
+
+		<div class="catalog__right">
+
+			<!-- верхний фильтр -->
+			<div class="top__filter">
+				<div class="top__filter--item">
+					<p class="top__filter--caption">Trending now</p>
+					<div class="top__filter--box">
+						<a class="top__filter-button" href="#">Bohemian</a>
+						<a class="top__filter-button" href="#">Floral</a>						
+						<a class="top__filter-button" href="#">Lace</a>
+						<a class="top__filter-button" href="#">Floral</a>
+						<a class="top__filter-button" href="#">Lace</a>
+						<a class="top__filter-button" href="#">Bohemian</a>												
+					</div>
+				</div>
+				<div class="top__filter--item">
+					<p class="top__filter--caption">Trending now</p>
+					<form action="#" class="filter__size">
+						<div class="filter__size-item"><input type="checkbox" id="ch01"><label for="ch01">XXS</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch02"><label for="ch02">XS</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch03"><label for="ch03">S</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch04"><label for="ch04">M</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch05"><label for="ch05">L</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch06"><label for="ch06">XL</label></div>
+						<div class="filter__size-item"><input type="checkbox" id="ch07"><label for="ch07">XXL</label></div>
+					</form>
+				</div>
+				<div class="top__filter--item">
+					<p class="top__filter--caption">PRICE</p>
+					<input class="filter__price" type="range" min="52" max="400" step="1" value="50">
+					<div class="filter_price-minmax">
+						<p>$52</p>
+						<p>$400</p>
+					</div>
+				</div>
+			</div>
+			<div class="sort__by">
+				<p class="sort__by-text">Sort By</p>
+				<select class="sort__by-select" name="#" id="#">
+					<option>Name</option>
+					<option>Price</option>
+					<option>Size</option>
+				</select>
+				<p class="sort__by-text">Show</p>
+				<select class="sort__by-select" name="#" id="#">
+					<option>09</option>
+					<option>12</option>
+					<option>15</option>
+					<option>18</option>
+				</select>				
+			</div>
+			<!-- верхний фильтр -->
+			
+			<!-- сетка с вещами -->
+			<div class="conteiner">
+				<app-catalog ref="appCatalog" :quant="9"></app-catalog>
+			</div>
+			<!-- сетка с вещами -->
+
+			<!-- пагинация -->
+			<div class="pagin">
+				<div class="pagin__left">
+					<a href="#" class="pagin_num"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+					<a href="#" class="pagin_num pink">1</a>
+					<a href="#" class="pagin_num">2</a>
+					<a href="#" class="pagin_num">3</a>
+					<a href="#" class="pagin_num">4</a>
+					<a href="#" class="pagin_num">5</a>
+					<a href="#" class="pagin_num">6</a>
+					<p class="pagin_num">...<p>
+					<a href="#" class="pagin_num">20</a>
+					<a href="#" class="pagin_num"><i class="fa fa-angle-right" aria-hidden="true"></i></a>				
+				</div>
+				<a class="pagin__right button-white">View All</a>
+			</div>
+			<!-- пагинация -->
+
+		</div>	
+	</main>
+	<!-- главная часть -->
+
+
+	<!-- баннер и 3 преимущества -->
+	<div class="features">
+		<div class="conteiner features-flex ">
+			<div class="feature__item">
+				<img src="img/offer-car.png" alt="auto" class="feature__item-img">
+				<h3 class="feature__item-caption">Free Delivery</h3>
+				<p class="feature__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+			</div>
+			<div class="feature__item">
+				<img src="img/offer-procent.png" alt="auto" class="feature__item-img">
+				<h3 class="feature__item-caption">Sales & discounts</h3>
+				<p class="feature__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+			</div>
+			<div class="feature__item">
+				<img src="img/offer-crown.png" alt="auto" class="feature__item-img">
+				<h3 class="feature__item-caption">Quality assurance</h3>
+				<p class="feature__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+			</div>
+		</div>
+	</div>
+	<!-- баннер и 3 преимущества -->
+
+	<!-- форма подписки -->
+	<div class="subscribe">
+		<div class="conteiner sub-flex">
+			<div class="sub__left">
+				<img src="img/face.png" alt="face" class="sub-face">
+				<p class="sub__left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+				<p class="sub__sing-first pink">Bin Burhan</p>
+				<p class="sub__sing-second">Dhaka, Bd</p>
+			</div>
+			<div class="sub__right">
+				<p class="sub__right-first">Subscribe</p>
+				<p class="sub__right-second">FOR OUR NEWLETTER AND PROMOTION</p>
+				<form class="form-sub" action="#">
+					<input class="text-sub" type="email" placeholder="Enter Your Email.">
+					<button class="btn-sub" type="submit">Subscribe</button>
+				</form>				
+			</div>
+		</div>
+	</div>
+	<!-- форма подписки -->
+
+	<!-- подвал -->
+	<footer class="footer">
+		<div class="footer-flex conteiner">
+			<div class="footer__left">
+				<a class="logo" href="index.html"><img class="logo-img" src="img/logo-top.png" alt="logo">
+					BRAN<span class="logo-d">D</span>
+				</a>
+				<p class="footer__left-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+				<p class="footer__left-text">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>				
+			</div>
+			<div class="footer__right">
+				<div class="footer__block">
+					<p class="footer__menu-h">COMPANY</p>
+					<ul class="bottom__menu">
+						<li class="bottom__menu-list"><a href="index.html">Home </a></li>
+						<li class="bottom__menu-list"><a href="catalog.html">Shop</a></li>
+						<li class="bottom__menu-list"><a href="#">About</a></li>
+						<li class="bottom__menu-list"><a href="#">How It Works</a></li>
+						<li class="bottom__menu-list"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<p class="footer__menu-h">INFORMATION</p>
+					<ul class="bottom__menu">
+						<li class="bottom__menu-list"><a href="#">Tearms & Condition </a></li>
+						<li class="bottom__menu-list"><a href="#">Privacy Policy</a></li>
+						<li class="bottom__menu-list"><a href="#">How to Buy</a></li>
+						<li class="bottom__menu-list"><a href="#">How to Sell</a></li>
+						<li class="bottom__menu-list"><a href="#">Promotion</a></li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<p class="footer__menu-h">SHOP CATEGORY</p>
+					<ul class="bottom__menu">
+						<li class="bottom__menu-list"><a href="catalog.html">Men </a></li>
+						<li class="bottom__menu-list"><a href="catalog.html">Women</a></li>
+						<li class="bottom__menu-list"><a href="catalog.html">Child</a></li>
+						<li class="bottom__menu-list"><a href="catalog.html">Apparel</a></li>
+						<li class="bottom__menu-list"><a href="catalog.html">Browse All</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- подвал -->
+
+	<!-- меню соцсетей -->	
+	<div class="bottom">
+		<div class="conteiner bottom-flex">
+			<div class="bottom__left">
+				<p>&copy; 2017  Brand  All Rights Reserved.</p>
+			</div>
+			<div class="bottom__right">
+				<ul class="menu__soc">
+					<li class="menu__soc-list"><a href="#"><i class="fa fa-facebook fa-fw " aria-hidden="true"></i></a></li>
+					<li class="menu__soc-list"><a href="#"><i class="fa fa-twitter fa-fw " aria-hidden="true"></i></a></li>
+					<li class="menu__soc-list menu__soc-disable"><a href="#"><i class="fa fa-linkedin fa-fw " aria-hidden="true"></i></a></li>
+					<li class="menu__soc-list"><a href="#"><i class="fa fa-pinterest-p fa-fw " aria-hidden="true"></i></a></li>
+					<li class="menu__soc-list"><a href="#"><i class="fa fa-google-plus fa-fw " aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- меню соцсетей -->
+</div>
+
+<script src="js/lib/vue.js"></script>
+<script src="js/components/CatalogComp.js"></script>
+<script src="js/components/CartComp.js"></script>
+<script src="js/components/SearchComp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/accordion.js"></script>		
+
+
+</body>
+</html>
